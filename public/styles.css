@@ -1,0 +1,18 @@
+body{
+  background-color: 	#D3D3D3;
+}
+h1{
+  text-align: center;
+}
+  .col-lg-4{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+p{
+  font-family: 'Sen', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}

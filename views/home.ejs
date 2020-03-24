@@ -2,16 +2,82 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>Covid India Live Stats</title>
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
+        <h1>Hello Infected World!</h1>
+<p>In these times of heavy restrictions and quarantine all around,let us stay at home and fulfil our childhood dream to serve the nation,merely by accomplishing a simple task - <a target="_blank"href="https://twitter.com/hashtag/stayhome?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag">#StayHome</a>.</p>
+<h3 style="text-align:center;">Current Indian Stats</h3>
+<div class="row" style="margin-right:-0";>
+<!-- Card 1 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="card" style="text-align:center;width:18rem;">
+  <img class="card-img-top" src="https://www.mohfw.gov.in/assets/images/passengers.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Passengers Screened at airport</h5>
+    <p style="text-align:center;" class="card-text"><%= value[0] %></p>
+  </div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="card" style="text-align:center;width:18rem;">
+<img class="card-img-top" src="https://www.mohfw.gov.in/assets/images/active_patient.png" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">Active Covid 19 Cases</h5>
+<p class="card-text"><%= value[1] %></p>
+</div>
+</div>
+</div>
 
-    <h1>Hello Infected World!</h1>
-    <h2>Passengers Screened at airport:<%= value[0] %></h2>
-    <h2>Active Covid 19 Cases:<%= value[1] %></h2>
-    <h2>Cured/Discharged Cases:<%= value[2] %></h2>
-    <h2>DeathCases:<%= value[3] %></h2>
-    <h2>Migrated Covid-19 Patient:<%= value[4] %></h2>
 
+<!-- Card 3 -->
+<div class="col-lg-4 col-md-12 col-sm-12">
+<div class="card" style="text-align:center;width:18rem;">
+<img class="card-img-top" src="https://www.mohfw.gov.in/assets/images/cured.png" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">Cured/Discharged Cases</h5>
+<p class="card-text"><%= value[2] %></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row" style="margin-right:0";>
+  <div class="col-lg-2"></div>
+<!-- Card 4 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="card" style="text-align:center;width:18rem;">
+<img class="card-img-top" src="https://www.mohfw.gov.in/assets/images/death.png" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">DeathCases</h5>
+<p class="card-text"><%= value[3] %></p>
+</div>
+</div>
+</div>
+<br>
+  <!-- <div class="col-lg-2"></div> -->
+<!-- Card 5 -->
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="card" style="text-align:center;width:18rem;">
+<img class="card-img-top" src="https://www.mohfw.gov.in/assets/images/migrated_icon.png" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">Migrated Covid-19 Patient</h5>
+<p class="card-text"><%= value[4] %></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

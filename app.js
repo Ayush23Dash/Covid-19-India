@@ -21,10 +21,6 @@ rp('https://www.mohfw.gov.in/',function(err,res,body){
   let b = a[i];
 
   c.push(b.children[0].data);
-  // c = (b.children[0].data);
-
-  console.log(c);
-
 }
 
 });
