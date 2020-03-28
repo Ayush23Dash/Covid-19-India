@@ -23,12 +23,23 @@ rp('https://www.mohfw.gov.in/',function(err,res,body){
   c.push(b.children[0].data);
 }
 
-});
-app.get("/", (req,res) =>{
+rp('https://aqicn.org/city/delhi/',function(err,res,body)
+	{
+		let $ = cheerio.load(body);
+		let a = $('.aqivalue');
+		let aqi = (a[0].children[0].data);
+		let condition = a[0].attribs.title;
+		console.log(a[0].attribs.title);
+		
+		app.get("/", (req,res) =>{
 
-  res.render("home",{value :c});
+  res.render("home",{value :c,aqi,condition});
 
 });
+	});
+
+});
+
 
 
 app.listen(process.env.PORT || 3000,() => {

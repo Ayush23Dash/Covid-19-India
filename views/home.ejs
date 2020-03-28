@@ -73,7 +73,34 @@
 </div>
 </div>
 
-
+<!-- AQI -->
+<div class="card">
+  <div class="card-header" style="text-align: center;">
+    Hi,in this section I aim to keep a close eye on the AQI of the capital of India,<b>Delhi</b>
+  </div>
+  <div class="card-body" style="display:flex;justify-content: center;">
+    <blockquote class="blockquote mb-0">
+      <p>AQI</p>
+      <div style = "background-color: 
+      <% if(aqi>=0 && aqi<=50) { %>
+   #009966
+    <% }else if(aqi>51 && aqi<=100){ %>
+       #FFDE33
+    <% }else if(aqi>100 && aqi<=150){ %>
+      #FF9933
+    <% }else if(aqi>150 && aqi< 200){ %>
+      #CC0033
+    <% }else if(aqi>200 && aqi<=300){ %>
+      #660099
+    <% }else{ %>
+      #7E0023
+   <% }%>
+   ";>
+      <footer style="text-align: center;"><%=aqi%>(<%=condition%>)</footer>
+    </div>
+    </blockquote>
+  </div>
+</div>
 
 
 
