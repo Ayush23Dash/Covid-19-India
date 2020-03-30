@@ -23,25 +23,26 @@ rp('https://www.mohfw.gov.in/',function(err,res,body){
   c.push(b.children[0].data);
 }
 
+});
 // AQI
+    let aqi,condition;
 rp('https://aqicn.org/city/delhi/',function(err,res,body)
 	{
 		let $ = cheerio.load(body);
 		let a = $('.aqivalue');
-		let aqi = (a[0].children[0].data);
-		let condition = a[0].attribs.title;
-		// console.log(a[0].attribs.title);
-		
-		app.get("/", (req,res) =>{
+		 aqi = (a[0].children[0].data);
+		 condition = a[0].attribs.title;
+	});
+
+  app.get("/", (req,res) =>{
 
   res.render("home",{value :c,aqi,condition});
 
 });
-	});
-
-});
 
 
+
+	
 
 app.listen(process.env.PORT || 3000,() => {
 console.log("Server is running on port 3000");
