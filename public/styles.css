@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('./SEGA.woff') format('woff');
+    }
 body{
   background-color: 	#D3D3D3;
 }
 h1{
   text-align: center;
+}
+h2{
+  font-family: 'SEGA LOGO FONT';
+        font-weight: 200;
+        color:#0ccac4
 }
   .col-lg-4{
     display: flex;
@@ -16,3 +27,4 @@ p{
   text-align: center;
   font-size: 20px;
 }
+
