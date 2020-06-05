@@ -15,3 +15,7 @@ Run on browser
 ```
 localhost:3000
 ```
+
+<h1>SCREENSHOTS</h1>
+<img src = "covid.png">
+<img src = "covid2.png">
