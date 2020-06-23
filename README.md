@@ -8,13 +8,28 @@ and AQI data from
 https://aqicn.org/city/delhi/
 ```
 To create locally
+<ul>
+<li>Clone this repo</li>
+<li>cd Covid-19-India </li>
+<li>Run:</li>
+
+
+```
+npm i
+```
+<li> Then : </li>
+
 ```
 node app.js
 ```
-Run on browser
+
+<li>Open Browser</li>
+
 ```
 localhost:3000
 ```
+
+</ul>
 
 <h1>SCREENSHOTS</h1>
 <img src = "covid.png">
