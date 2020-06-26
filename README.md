@@ -7,7 +7,7 @@ and AQI data from
 ```
 https://aqicn.org/city/delhi/
 ```
-To create locally
+<h1>To create locally</h1>
 <ul>
 <li>Clone this repo</li>
 <li>cd Covid-19-India </li>
