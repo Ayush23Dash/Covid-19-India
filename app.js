@@ -28,7 +28,7 @@ rp('https://www.mohfw.gov.in/',function(err,res,body){
   c.push(a[0].children[0].parent.children[3].children[0].data);
   c.push(b[0].children[0].parent.children[3].children[0].data);
   c.push(d[0].children[0].parent.children[3].children[0].data);
-  c.push(e[0].children[0].parent.children[3].children[0].data);
+  // c.push(e[0].children[0].parent.children[3].children[0].data);
 });
 
 // });
