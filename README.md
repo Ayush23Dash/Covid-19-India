@@ -1,4 +1,4 @@
-This app informs about the current stats of the Covid-19 epidemic in India.<br>
+This app informs about the current stats of the Covid-19 pandemic in India.<br>
 This app scrapes Covid data from:
 ```
 https://www.mohfw.gov.in/
