@@ -34,4 +34,4 @@ localhost:3000
 <h1>SCREENSHOTS</h1>
 <img src = "covid.png">
 <img src = "covid2.png">
-<h6>This is made for Unnat Bharat Abhiyan MSIT</h6>
+<h6>This is made for Unnat Bharat Abhiyan MSIT(a MHRD Initiative</h6>
